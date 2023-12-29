@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,600;0,800;1,600;1,800&display=swap"
+    rel="stylesheet">
+
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      color: hsl(0, 0%, 7%);
+      font-size: clamp(0.9rem, 0.11vw, 1rem);
+    }
+
+    *:focus-visible,
+    *:focus {
+      outline: 2px solid hsl(0, 0%, 7%);
+    }
+
+    body {
+      height: 100vh;
+      background-color: hsl(47, 88%, 63%);
+      display: grid;
+      place-content: center;
+      font-family: 'Figtree', 'serif';
+      padding: 0 25px;
+    }
+
+    article {
+      background-color: hsl(0, 0%, 100%);
+      padding: 16px;
+      border-radius: 18px;
+      border: 1px solid hsl(0, 0%, 7%);
+      box-shadow: 8px 8px hsl(0, 0%, 7%);
+      max-width: 302px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    article>img {
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    h5 {
+      margin-top: 20px;
+      padding: 4px 8px;
+      font-size: 0.7rem;
+      background-color: hsl(47, 88%, 63%);
+      width: fit-content;
+      border-radius: 4px;
+      font-weight: 800;
+    }
+
+    h6 {
+      font-weight: 800;
+      margin-top: 14px;
+      font-size: 0.7rem;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      transition: color ease-in .3s;
+    }
+
+    h1:hover {
+      color: hsl(47, 88%, 63%)
+    }
+
+    article>p {
+      margin-top: 20px;
+      color: hsl(0, 0%, 50%);
+      line-height: 130%;
+      word-spacing: 2px;
+    }
+
+    section {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    section>img {
+      width: 28px;
+      height: 28px;
+    }
+
+    section>p {
+      font-weight: 800;
+    }
+  </style>
+</head>
+
+<body>
+  <article tabindex="1">
+    <img tabindex="2" src="assets/images/illustration-article.svg" alt="Card Image" />
+    <h5 tabindex="3">Learning</h5>
+    <h6>Published 21 Dec 2023</h6>
+    <h1 tabindex="4">HTML & CSS foundations</h1>
+    <p>These languages are the backbone of every website, defining structure, content, and presentation</p>
+    <section tabindex="5">
+      <img src="assets/images/image-avatar.webp" alt="avatar" />
+      <p>Greg Hooper</p>
+    </section>
+  </article>
+
+</body>
+
+</html>
